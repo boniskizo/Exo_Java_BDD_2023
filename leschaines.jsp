@@ -80,7 +80,6 @@
 <h2>Exercice 6 : Consonnes et voyelles</h2>
 <p>
     <%
-    String chaine = request.getParameter("chaine");
     if (chaine != null && !chaine.isEmpty()) { 
         chaine = chaine.toLowerCase();
         int voyelles = 0, consonnes = 0;
