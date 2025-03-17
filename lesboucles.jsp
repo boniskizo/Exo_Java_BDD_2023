@@ -29,9 +29,9 @@
 <p>
     <% for (int j = 1; j <= cpt; j++) {
         for (int i = 1; i <= cpt; i++) {
-            out.print("*");
+            out.println("*");
         }
-        out.print("\n");
+        out.println("\n");
     } %>
 </p>
 
@@ -39,9 +39,9 @@
 <p>
     <% for (int j = 1; j <= cpt; j++) {
         for (int i = cpt; i < cpt+j; i++) {
-            out.print("*");
+            out.println("*");
         }
-        out.print("\n");
+        out.println("\n");
     } %>
 </p>
 
@@ -49,9 +49,9 @@
 <p>
     <% for (int j = 0; j < cpt; j++) {
         for (int i = 0; i < cpt-j; i++) {
-            out.print("*");
+            out.println("*");
         }
-        out.print("\n");
+        out.println("\n");
     } %>
 </p>
 
@@ -59,13 +59,13 @@
 <p><% for (int j = 0; j < cpt; j++) {
         for (int i = 0; i < cpt; i++) {
             if (i+1<cpt-j) {
-                out.print(" ");
+                out.println(" ");
             }
             
             else {
-                out.print("*");
+                out.println("*");
             }
-            out.print("\n");
+            out.println("\n");
         }
 } %>
 </p>
@@ -74,13 +74,13 @@
 <p><% for (int j = 0; j < cpt; j++) {
     for (int i = 0; i < cpt; i++) {
         if (i+1<cpt-j) {
-            out.print(" ");
+            out.println(" ");
         }
         
         else {
-            out.print("* ");
+            out.println("* ");
         }
-    out.print("\n");
+    out.println("\n");
     }
 } %>
 </p>
@@ -89,23 +89,23 @@
 <p><% for (int j = 0; j < cpt; j++) {
     for (int i = 0; i < cpt; i++) {
         if (i+1<cpt-j) {
-            out.print("*");
+            out.println("*");
         }
         
         else { 
-            out.print("*");
+            out.println("*");
     }
-    out.print("\n");
+    out.println("\n");
     }
 } %>
 
 <% for (int i = 0; i < cpt; i++) {
     for (int j = 0; j < i; j++) {
-        out.print(" ");
+        out.println(" ");
     }
      
     for (int k = 0; k < (cpt - i); k++) {
-        out.print("*");
+        out.println("*");
     }
      
     out.println();
