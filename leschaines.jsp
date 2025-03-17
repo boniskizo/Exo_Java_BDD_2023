@@ -94,6 +94,7 @@
                 }
             }
         }
+        out.print("Voyelles : "+voyelles+", Consonnes : "+consonnes);
     }
     %>
 </p>
