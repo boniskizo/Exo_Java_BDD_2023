@@ -8,8 +8,8 @@
 <body>
     <h2>Comparaison entre deux valeurs</h2>
     <form method="post">
-        Saisir la valeur 1 : <input type="text" name="valeur1"> 
-        Saisir la valeur 2 : <input type="text" name="valeur2"> 
+        Valeur 1 : <input type="text" name="valeur1"> 
+        Valeur 2 : <input type="text" name="valeur2"> 
         <input type="submit" name="comparer" value="Comparer">
     </form>
     <% 
@@ -23,9 +23,9 @@
     
     <h2>Exercice 1 : Comparaison</h2>
     <form method="post">
-        Valeur A : <input type="text" name="valeurA"> 
-        Valeur B : <input type="text" name="valeurB"> 
-        Valeur C : <input type="text" name="valeurC"> 
+        Valeur 1 : <input type="text" name="valeurA"> 
+        Valeur 2 : <input type="text" name="valeurB"> 
+        Valeur 3 : <input type="text" name="valeurC"> 
         <input type="submit" name="verifier1" value="Vérifier">
     </form>
     <% 
