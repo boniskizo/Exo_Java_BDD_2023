@@ -114,9 +114,11 @@
 
 
 <h2>Exercice 7 : La table de multiplication</h2>
+<p>
 <% for(int i=1;i<=cpt;i++) { %>
     <% out.println(cpt+" x "+i+" = "+cpt*i); %>
 <% } %>
+</p>
 
 <p><a href="index.html">Retour au sommaire</a></p>
 </body>
