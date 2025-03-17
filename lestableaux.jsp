@@ -47,17 +47,63 @@
 </p>
 
 <h2>Exercice 4 : La valeur maximum</h2>
-<p>Ecrire un programme pour afficher la valeur maximale saisie par l'utilisateur</p>
+<p>
+    <%
+    int valMax=0;
+		
+    for(int i=0; i<tableauDeChiffres.length;i++) {
+        if(i>0 && Integer.parseInt(tableauDeChiffres[i])>valMax) {
+            valMax=Integer.parseInt(tableauDeChiffres[i]);
+        }
+    }
+    out.print(valMax);
+    %>
+</p>
 
 <h2>Exercice 5 : La valeur minimale</h2>
-<p>Ecrire un programme pour afficher la valeur minimale saisie par l'utilisateur</p>
+<p>
+    <%
+    int valMin=Integer.parseInt(tableauDeChiffres[0]);
+		
+    for(int i=0; i<tableauDeChiffres.length;i++) {
+        if(i>0 && Integer.parseInt(tableauDeChiffres[i])<valMin) {
+            valMax=Integer.parseInt(tableauDeChiffres[i]);
+        }
+    }
+    out.print(valMin);
+    %>
+</p>
 
 <h2>Exercice 6 : La valeur le plus proche de 0</h2>
-<p>Trouvez la valeur la plus proche de 0 (chiffres positifs ou négatifs)</p>
+<p>
+    <%
+    int valZero=Integer.parseInt(tableauDeChiffres[0]);
+		
+    for(int i=0; i<tableauDeChiffres.length;i++) {
+        if(i>0 && Integer.parseInt(tableauDeChiffres[i])*Integer.parseInt(tableauDeChiffres[i])<valZero*valZero) {
+            valZero=Integer.parseInt(tableauDeChiffres[i]);
+        }
+    }
+    out.print(valZero);
+    %>
+</p>
 
 <h2>Exercice 7 : La valeur le plus proche de 0 (2° version)</h2>
-<p>Trouvez la valeur la plus proche de 0 (chiffres positifs ou négatifs)</p>
-<p>En cas d'égalité entre un chiffre positif et négatif, affichez le chiffre positif</p>
+<p>
+    <%
+    int valZeroPos=Integer.parseInt(tableauDeChiffres[0]);
+		
+    for(int i=0; i<tableauDeChiffres.length;i++) {
+        if(i>0 && Integer.parseInt(tableauDeChiffres[i])*Integer.parseInt(tableauDeChiffres[i])<valZeroPos*valZeroPos) {
+            valZeroPos=Integer.parseInt(tableauDeChiffres[i]);
+        }
+        if(Integer.parseInt(tableauDeChiffres[i])*Integer.parseInt(tableauDeChiffres[i])==valZeroPos*valZeroPos) {
+            valZeroPos=Math.abs(valZeroPos);
+        }
+    }
+    System.out.print(valZeroPos);
+    %>
+</p>
 
 <% } %>
 <p><a href="index.html">Retour au sommaire</a></p>
