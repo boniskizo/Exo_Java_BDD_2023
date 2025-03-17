@@ -101,7 +101,7 @@
             valZeroPos=Math.abs(valZeroPos);
         }
     }
-    System.out.print(valZeroPos);
+    out.print(valZeroPos);
     %>
 </p>
 
