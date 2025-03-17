@@ -57,59 +57,66 @@
 
 <h2>Exercice 4 : Triangle rectangle 2</h2>
 <p><% for (int j = 0; j < cpt; j++) {
-        for (int i = 0; i < cpt; i++) {
-            if (i+1<cpt-j) {
-                out.println("<br />");
-            }
-            
-            else {
-                out.println("*");
-            }
-            out.println("<br />");
-        }
-} %>
-</p>
-
-<h2>Exercice 5 : Triangle isocele</h2>
-<p><% for (int j = 0; j < cpt; j++) {
     for (int i = 0; i < cpt; i++) {
         if (i+1<cpt-j) {
-            out.println("<br />");
+            out.print(" ");
         }
         
         else {
-            out.println("* ");
+            out.print("*");
         }
-    out.println("<br />");
     }
-} %>
+        out.print("<br />");
+}%>
+</p>
+
+<h2>Exercice 5 : Triangle isocele</h2>
+<p>
+    <%
+        for (int j = 0; j < cpt; j++) {
+            for (int i = 0; i < cpt; i++) {
+                if (i+1<cpt-j) {
+                    out.print(" ");
+                }
+                
+                else {
+                    out.print("* ");
+                }
+            }
+            out.print("<br />");
+        } 
+    %>
 </p>
 
 <h2>Exercice 6 : Le demi losange</h2>
-<p><% for (int j = 0; j < cpt; j++) {
-    for (int i = 0; i < cpt; i++) {
-        if (i+1<cpt-j) {
-            out.println("*");
+<p><% 
+    for (int j = 0; j < cpt; j++) {
+        for (int i = 0; i < cpt; i++) {
+            if (i+1<cpt-j) {
+                out.print(" ");
+            }
+            
+            else {
+                out.print("*");
+            }
         }
-        
-        else { 
-            out.println("*");
+            out.print("<br/>");
     }
-    out.println("<br />");
+    
+    out.print("<br/>");
+    
+    for (int i = 0; i < cpt; i++) {
+        for (int j = 0; j < i; j++) {
+            out.print(" ");
+        }
+         
+        for (int k = 0; k < (cpt - i); k++) {
+            out.print("*");
+        }
+         
+        out.print("<br/>");
     }
-} %>
-
-<% for (int i = 0; i < cpt; i++) {
-    for (int j = 0; j < i; j++) {
-        out.println("<br />");
-    }
-     
-    for (int k = 0; k < (cpt - i); k++) {
-        out.println("*");
-    }
-     
-    out.println();
-} %>
+    %>
 </p>
 
 
