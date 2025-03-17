@@ -49,9 +49,7 @@
 <h2>Exercice 5 : La phrase en verlant</h2>
 <p>
     <%
-	    String chaine = "L'hiver est pluvieux";
-		
-		for(int i=chaine.length();i>=1;i--) {
+	    for(int i=chaine.length();i>=1;i--) {
 		    System.out.print(chaine.charAt(i-1));
 	    }
 	%>
