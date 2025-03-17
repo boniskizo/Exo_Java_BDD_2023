@@ -58,31 +58,31 @@
 <h2>Exercice 4 : Triangle rectangle 2</h2>
 <p><% for (int j = 0; j < cpt; j++) {%>
     <% for (int i = 0; i < cpt; i++) {%>
-        <% if (i+1<cpt-j) {%>
+        <% if (i+1<cpt-j) { %>
             &nbsp;
-        <%}%>
+        <% } %>
         
-        <%else {%>
-            <%out.print("*");%>
-        <%}%>
-    <% out.print("\n");%>
-    <%}%>
-<%}%>
+        <% else { %>
+            <% out.print("*"); %>
+        <% } %>
+    <% out.print("\n"); %>
+    <% } %>
+<% } %>
 </p>
 
 <h2>Exercice 5 : Triangle isocele</h2>
 <p><% for (int j = 0; j < cpt; j++) {%>
     <% for (int i = 0; i < cpt; i++) {%>
-        <% if (i+1<cpt-j) {%>
+        <% if (i+1<cpt-j) { %>
             &nbsp;
-        <%}%>
+        <% } %>
         
-        <%else {%>
-            <%out.print("* ");%>
-        <%}%>
-    <% out.print("\n");%>
-    <%}%>
-<%}%>
+        <% else { %>
+            <% out.print("* "); %>
+        <% } %>
+    <% out.print("\n"); %>
+    <% } %>
+<% } %>
 </p>
 
 <h2>Exercice 6 : Le demi losange</h2>
@@ -90,14 +90,14 @@
     <% for (int i = 0; i < cpt; i++) {%>
         <% if (i+1<cpt-j) {%>
             &nbsp;
-        <%}%>
+        <% } %>
         
         <%else {%>
-            <%out.print("*");%>
-        <%}%>
-    <% out.print("\n");%>
-    <%}%>
-<%}%>
+            <%out.print("*"); %>
+        <% } %>
+    <% out.print("\n"); %>
+    <% } %>
+<% } %>
 
 <% for (int i = 0; i < cpt; i++) { %>
     <% for (int j = 0; j < i; j++) { %>
