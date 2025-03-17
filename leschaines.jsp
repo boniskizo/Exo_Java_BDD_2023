@@ -33,30 +33,40 @@
 
     
 <h2>Exercice 1 : Combien de 'e' dans notre chaine de charactère ?</h2>
-<p>Ecrire un programme pour compter le nombre de lettre e dans votre chaine de charactères</p>
+<%
+    int countE = 0;
+    for (char c : chaine.toCharArray()) {
+        if (c == 'e') countE++;
+    }
+%>
+<p>Nombre de 'e' dans la chaîne : <%= countE %></p>
+
 
 <h2>Exercice 2 : Affichage verticale</h2>
-<p>Ecrire le programme pour afficher le texte en vertical</br>
-Exemple : Bonjour</br>
-B</br>
-o</br>
-n</br>
-j</br>
-o</br>
-u</br>
-r</p>
+<%
+    for (char c : chaine.toCharArray()) {
+        out.println(c + "<br>");
+    }
+%>
 
 <h2>Exercice 3 : Retour à la ligne</h2>
-<p>La présence d'un espace provoque un retour à la ligne </br>
-Exemple : L'hiver sera pluvieux</br>
-L'hiver</br>
-sera</br>
-pluvieux</p>
+<p>
+<%
+    String[] mots = chaine.split(" ");
+    for (String mot : mots) {
+        out.println(mot + "<br>");
+    }
+%>
+</p>
 
 <h2>Exercice 4 : Afficher une lettre sur deux</h2>
-<p>Ecrire le programme pour afficher seulement une lettre sur deux de votre texte </br>
-Exemple : L'hiver sera pluvieux</br>
-Lhvrsr lvex</p>
+    <p>
+    <%
+        for (int i = 0; i < chaine.length(); i += 2) {
+            out.print(chaine.charAt(i));
+        }
+    %>
+</p>
 
 <h2>Exercice 5 : La phrase en verlant</h2>
 <p>Ecrire le programme afin d'afficher le texte en verlant </br>
