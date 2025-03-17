@@ -24,9 +24,9 @@
         <% int c = Integer.parseInt(valeur3); %>
         
         <%-- Condition if pour comparer les valeurs --%>
-        <% if (intValeur1 > intValeur2) { %>
+        <% if (a > b) { %>
             <p>Valeur 1 est supérieure à Valeur 2.</p>
-        <% } else if (intValeur1 < intValeur2) { %>
+        <% } else if (a < b) { %>
             <p>Valeur 1 est inférieure à Valeur 2.</p>
         <% } else { %>
             <p>Valeur 1 est égale à Valeur 2.</p>
