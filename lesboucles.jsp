@@ -59,7 +59,7 @@
 <p><% for (int j = 0; j < cpt; j++) {
         for (int i = 0; i < cpt; i++) {
             if (i+1<cpt-j) {
-                out.println(" ");
+                out.println("<br />");
             }
             
             else {
@@ -74,7 +74,7 @@
 <p><% for (int j = 0; j < cpt; j++) {
     for (int i = 0; i < cpt; i++) {
         if (i+1<cpt-j) {
-            out.println(" ");
+            out.println("<br />");
         }
         
         else {
@@ -101,7 +101,7 @@
 
 <% for (int i = 0; i < cpt; i++) {
     for (int j = 0; j < i; j++) {
-        out.println(" ");
+        out.println("<br />");
     }
      
     for (int k = 0; k < (cpt - i); k++) {
