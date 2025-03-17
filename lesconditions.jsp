@@ -37,10 +37,10 @@
 <p>
     <%
     if(a<c && c<b || a>c && c>b ) {
-        System.out.print("Valeur 3 est entre Valeur 1 et Valeur 2");
+        out.print("Valeur 3 est entre Valeur 1 et Valeur 2");
     }
     else {
-        System.out.print("Valeur 3 n'est pas entre eux");
+        out.print("Valeur 3 n'est pas entre eux");
     }
     %>
 </p>
