@@ -67,7 +67,7 @@
         <% } %>
     <% out.print("\n"); %>
     <% } %>
-<% } %>
+<% } %> <% } %>
 </p>
 
 <h2>Exercice 5 : Triangle isocele</h2>
