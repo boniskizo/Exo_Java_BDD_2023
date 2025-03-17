@@ -59,7 +59,7 @@
 <p><% for (int j = 0; j < cpt; j++) {%>
     <% for (int i = 0; i < cpt; i++) {%>
         <% if (i+1<cpt-j) { %>
-            &nbsp;
+            <% out.print(" "); %>
         <% } %>
         
         <% else { %>
