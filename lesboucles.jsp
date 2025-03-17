@@ -31,7 +31,7 @@
         for (int i = 1; i <= cpt; i++) {
             out.println("*");
         }
-        out.println("\n");
+        out.println("<br />");
     } %>
 </p>
 
@@ -41,7 +41,7 @@
         for (int i = cpt; i < cpt+j; i++) {
             out.println("*");
         }
-        out.println("\n");
+        out.println("<br />");
     } %>
 </p>
 
@@ -51,7 +51,7 @@
         for (int i = 0; i < cpt-j; i++) {
             out.println("*");
         }
-        out.println("\n");
+        out.println("<br />");
     } %>
 </p>
 
@@ -65,7 +65,7 @@
             else {
                 out.println("*");
             }
-            out.println("\n");
+            out.println("<br />");
         }
 } %>
 </p>
@@ -80,7 +80,7 @@
         else {
             out.println("* ");
         }
-    out.println("\n");
+    out.println("<br />");
     }
 } %>
 </p>
@@ -95,7 +95,7 @@
         else { 
             out.println("*");
     }
-    out.println("\n");
+    out.println("<br />");
     }
 } %>
 
