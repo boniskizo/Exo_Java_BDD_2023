@@ -72,13 +72,31 @@
 <p>
 <%
         for(int i=chaine.length();i>=1;i--) {
-            System.out.print(chaine.charAt(i-1));
+            out.print(chaine.charAt(i-1));
         }
 %>
 </p>
 
 <h2>Exercice 6 : Consonnes et voyelles</h2>
-<p>Ecrire le programme afin de compter les consonnes et les voyelles dans votre texte</p>
+<p>
+    <%
+    String chaine = request.getParameter("chaine");
+    if (chaine != null && !chaine.isEmpty()) { 
+        chaine = chaine.toLowerCase();
+        int voyelles = 0, consonnes = 0;
+        String voyellesStr = "aeiouy";
+
+        for (char c : chaine.toCharArray()) {
+            if (Character.isLetter(c)) {
+                if (voyellesStr.indexOf(c) != -1) {
+                    voyelles++;
+                } else {
+                    consonnes++;
+                }
+            }
+        }
+    %>
+</p>
 
 <% } %>
 <p><a href="index.html">Retour au sommaire</a></p>
