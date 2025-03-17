@@ -58,15 +58,15 @@
 <h2>Exercice 4 : Triangle rectangle 2</h2>
 <p><% for (int j = 0; j < cpt; j++) {
         for (int i = 0; i < cpt; i++) {
-        if (i+1<cpt-j) {
-            out.print(" ");
+            if (i+1<cpt-j) {
+                out.print(" ");
+            }
+            
+            else {
+                out.print("*");
+            }
+            out.print("\n");
         }
-        
-        else {
-            out.print("*");
-        }
-    out.print("\n");
-    }
 } %>
 </p>
 
